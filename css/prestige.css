@@ -1,0 +1,391 @@
+@charset "utf-8";
+/* CSS Document for prestige skateboards  updated 9/23/15 JD*/
+
+body {
+	background:rgba(102, 153, 204,1);
+}
+
+
+/* contact form design elements */
+
+#contact_form #name {
+	width: 50%;
+}
+
+#contact_form #email{
+	width: 50%;
+}
+
+#contact_form #message{
+	width: 50%;
+}
+
+#contact_form #submit_button{
+	width: 20%;
+}
+
+#contact_form input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
+input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
+
+/* about page elements */
+
+#about p{
+	background-color:#DBD7D7;
+	font-family: 'Lora', serif;
+	border-radius: 10px;
+	border:thick;
+}
+
+
+/* Carousel design elements */
+
+#wrapper {
+	background: #f0ffff;
+	border-bottom: 1px solid #ccc;
+	height: 70%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#inner {
+	width: 60%;
+	min-width: 300px;
+	max-width: 800px;
+	position: absolute;
+	bottom: -50px;
+	left: 20%;
+}
+#carousel-wrapper {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+ 
+	background: #fff;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+	width: 100%;
+	padding: 20px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#carousel {
+	width: 800px;
+	height: 500px;
+	overflow: hidden;
+}
+#carousel img {
+	display: block;
+	float: left;
+}
+#pager-wrapper {
+	height: 120px;
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	bottom: -35px;
+	left: 0;
+	z-index: 2;
+}
+#pager img {
+	cursor: pointer;
+	background: #fff;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	display: block;
+	width: 80px;
+	height: 80px;
+	padding: 10px;
+	margin: 10px;
+	float: left;
+}
+#pager img:hover {
+	background: #eff;
+}
+#pager img.selected {
+	background: #dff;
+}
+
+
+/* video elements on about.html */
+
+#video_p {
+	font-family: 'Lora', serif;
+	background-color:#F39C9E;
+	border-radius: 10px;
+}
+
+
+/* Panel styling on about.html */
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+#info {
+	background-color: #e5eecc;
+	border-radius: 10px;
+	border:groove black;
+	text-align:center;
+	font-family: 'Oswald', sans-serif;
+	font-size:19px;
+}
+
+#locate {
+	text-align:center;
+	
+}
+
+#times {
+	background-color: #e5eecc;
+	text-align:center;
+	font-family: 'Oswald', sans-serif;
+	font-size:18px;
+	border-radius: 10px;
+	border:groove black;
+}
+
+
+#accordion {
+	font-family: 'Bangers', cursive;
+	font-size:24px;
+}
+
+#accordion img .displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+#check {
+	font-family: 'Oswald', sans-serif;
+}
+
+#skate {
+	font-family: 'Oswald', sans-serif;
+}
+
+#offer {
+	font-family: 'Oswald', sans-serif;
+}
+
+#email_form label {
+	font-family: 'Oswald', sans-serif;
+}
+
+/**************** lightbox effects on about.html *******************/
+
+/* line 6, ../sass/lightbox.sass */
+#lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+  opacity: 0.85;
+  display: none;
+}
+
+/* line 15, ../sass/lightbox.sass */
+#lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  font-weight: normal;
+}
+/* line 24, ../sass/lightbox.sass */
+#lightbox img {
+  width: auto;
+  height: auto;
+}
+/* line 27, ../sass/lightbox.sass */
+#lightbox a img {
+  border: none;
+}
+
+/* line 30, ../sass/lightbox.sass */
+.lb-outerContainer {
+  position: relative;
+  background-color: white;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 38, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 39, ../sass/lightbox.sass */
+.lb-container {
+  padding: 10px;
+}
+
+/* line 42, ../sass/lightbox.sass */
+.lb-loader {
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+/* line 51, ../sass/lightbox.sass */
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 59, ../sass/lightbox.sass */
+.lb-container > .nav {
+  left: 0;
+}
+
+/* line 62, ../sass/lightbox.sass */
+.lb-nav a {
+  outline: none;
+}
+
+/* line 65, ../sass/lightbox.sass */
+.lb-prev, .lb-next {
+  width: 49%;
+  height: 100%;
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+  /* Trick IE into showing hover */
+  display: block;
+}
+
+/* line 72, ../sass/lightbox.sass */
+.lb-prev {
+  left: 0;
+  float: left;
+}
+
+/* line 76, ../sass/lightbox.sass */
+.lb-next {
+  right: 0;
+  float: right;
+}
+
+/* line 81, ../sass/lightbox.sass */
+.lb-prev:hover {
+  background: url(images/prev.png) left 48% no-repeat;
+}
+
+/* line 85, ../sass/lightbox.sass */
+.lb-next:hover {
+  background: url(images/next.png) right 48% no-repeat;
+}
+
+/* line 88, ../sass/lightbox.sass */
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -ms-border-bottom-left-radius: 4px;
+  -o-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -ms-border-bottom-right-radius: 4px;
+  -o-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/* line 38, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 95, ../sass/lightbox.sass */
+.lb-data {
+  padding: 0 10px;
+  color: #bbbbbb;
+}
+/* line 98, ../sass/lightbox.sass */
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+}
+/* line 103, ../sass/lightbox.sass */
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em;
+}
+/* line 107, ../sass/lightbox.sass */
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 11px;
+}
+/* line 112, ../sass/lightbox.sass */
+.lb-data .lb-close {
+  width: 35px;
+  float: right;
+  padding-bottom: 0.7em;
+  outline: none;
+}
+/* line 117, ../sass/lightbox.sass */
+.lb-data .lb-close:hover {
+  cursor: pointer;
+}
+
+label.error {
+	float: none;
+	color:red;
+	font-size: 87.5%;
+	margin-left: .5em;
+}
+
+section h1 {
+	text-align:center;
+}
+
+section p {
+}
+	
+	/* slideshow elements */
+
+#slideshow {
+	background-color:rgba(164,70,72,1.00);
+}
+
+.well {
+	background:rgba(102, 153, 204,1);
+}
