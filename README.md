@@ -1,2 +1,3 @@
 # Prestige
 This is a concept website for a local skate shop that I created and also designed. It is not intended for commercial purposes. I created this application for the purpose of showcasing my ability to use JavaScript functions as well as J Query and Ajax libraries. I created it using bootstrap framework. Each page has different functionality of some kind. I have disabled the form on the contact page so when you enter a correct email you will receive an error but still get to see the animation that will occur. The website was also designed to be cross browser compatible, and on mobile devices.
+View it here -> http://www.w3expressions.com/jakedalton/project_5/index.html
